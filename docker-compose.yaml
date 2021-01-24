@@ -17,6 +17,13 @@ services:
             - .:/app
         depends_on:
             - database
+        environment:
+            - APP_ENV=dev
+            - APP_SECRET=c38170264790969a64d84eea4eeaf46d
+            - MONGODB_URL=mongodb://mongo_user:mongo_passwd@database:27017
+            - CRON=false
+            - XDEBUG=true
+        restart: on-failure
     database:
         environment:
             - MONGO_INITDB_ROOT_USERNAME=mongo_user
@@ -26,3 +33,4 @@ services:
             - 27017:27017
         volumes:
             - .docker/database:/data/db
+        restart: on-failure
