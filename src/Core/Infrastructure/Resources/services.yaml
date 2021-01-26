@@ -1,0 +1,14 @@
+parameters:
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    App\Core\:
+        resource: '../../*'
+
+    App\Core\Infrastructure\Controller\:
+        resource: '../Controller'
+        tags: ['controller.service_arguments']

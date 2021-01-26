@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+docker-compose exec app bash -c "vendor/bin/phpunit --configuration phpunit.xml.dist tests"

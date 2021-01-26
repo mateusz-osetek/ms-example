@@ -12,7 +12,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     debconf \
     git \
+    libcurl4-openssl-dev \
     mailutils \
+    libssl-dev \
+    pkg-config \
     wget \
     vim \
     unzip \
