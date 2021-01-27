@@ -14,5 +14,5 @@ doctrine_mongodb:
                 Common:
                     is_bundle: false
                     type: xml
-                    dir: '%kernel.project_dir%/src/Core/Infrastructure/Resources/doctrine'
+                    dir: '%kernel.project_dir%/src/Example/Infrastructure/Resources/doctrine'
                     prefix: App\Core\Domain

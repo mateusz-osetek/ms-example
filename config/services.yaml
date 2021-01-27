@@ -4,4 +4,4 @@ parameters:
     env(MONGODB_DB): ''
 
 imports:
-    - { resource: '../src/Core/Infrastructure/Resources/services.yaml' }
+    - { resource: '../src/Example/Infrastructure/Resources/services.yaml' }

@@ -17,8 +17,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libssl-dev \
     pkg-config \
     wget \
-    vim \
     unzip \
+    vim \
+    ssh \
     zlib1g-dev
 
 COPY .docker/app/php.ini /usr/local/etc/php/php.ini

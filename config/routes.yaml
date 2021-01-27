@@ -1,4 +1,4 @@
 core:
     prefix: /
-    resource: ../src/Core/Infrastructure/Resources/routes.yaml
+    resource: ../src/Example/Infrastructure/Resources/routes.yaml
     type: yaml
